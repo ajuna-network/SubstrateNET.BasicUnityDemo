@@ -4,6 +4,7 @@ using AjunaExample.RestClient;
 using System;
 using System.Net.Http;
 using System.Net.WebSockets;
+using Ajuna.NetApi.Model.Extrinsics;
 
 namespace Assets.Scripts
 {
@@ -29,7 +30,7 @@ namespace Assets.Scripts
                 return;
             } 
             
-            _client = new SubstrateClientExt(new Uri(NodeUrl));
+            _client = new SubstrateClientExt(new Uri(NodeUrl), ChargeAssetTxPayment.Default());
 
             _subscriptionClient = new BaseSubscriptionClient(new ClientWebSocket());
 
