@@ -18,11 +18,15 @@ public class ConnectionSceneController : MonoBehaviour
     private Task _connectTask;
     private static NetworkManager _networkManager = new NetworkManager();
 
-    private bool _queryBlockNumberFlag, _isSubscribedToStorageChanges, _useSubscription = true;
+    private bool _queryBlockNumberFlag, _isSubscribedToStorageChanges;
+    
+    /// <summary>
+    /// Set to true for subscribing to changes and false for polling for the storage changes 
+    /// </summary>
+    private bool _useSubscription = false;
     
     void Awake()
     {
-      //  BlockNumberText.text = "Let's see if this works";
         SetButtonToDisconnectedState();
         _networkManager.InitializeClient();
     }
@@ -56,7 +60,7 @@ public class ConnectionSceneController : MonoBehaviour
             _connectTask = _networkManager.Client.CloseAsync();
             
             _isSubscribedToStorageChanges = false;    
-            CancelInvoke(); // cancel all invokes
+            CancelInvoke(); 
         }
         else
         {
@@ -65,7 +69,6 @@ public class ConnectionSceneController : MonoBehaviour
             StartQueryingForBlockNumber(); 
         }
     }
-    
 
     public void StartQueryingForBlockNumber()
     {
@@ -137,8 +140,7 @@ public class ConnectionSceneController : MonoBehaviour
 
         var newBlockNumber = primitiveBlockNumber.Value.ToString();
 
-        //UnityMainThreadDispatcher.DispatchAsync(
-            UnityMainThreadDispatcher.Instance().Enqueue(
+        UnityMainThreadDispatcher.Instance().Enqueue(
                 () =>{
             BlockNumberText.text = newBlockNumber;
         });
