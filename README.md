@@ -34,4 +34,4 @@ There are two different examples:
 
 - [How to generate the necessary .NET projects using the Ajuna.SDK](https://www.youtube.com/watch?v=27k8vxCrXcY)
 - [How to generate the necessary DLLs for your Unity project](https://www.youtube.com/watch?v=c_FpDCys3YI)
-- [Walkthrough of `substrate-node-template` implementation](https://www.loom.com/share/630e4f49c21c4
+- [Walkthrough of `substrate-node-template` implementation](https://www.loom.com/share/630e4f49c21c4)
