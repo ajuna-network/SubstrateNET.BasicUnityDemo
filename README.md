@@ -15,6 +15,8 @@ There are two different examples:
 - Open project
 - Open Node Connection scene
 - Play project
+- [Video Explantion of how this works can be found here](https://www.loom.com/share/30ecfaaf0e45427c9b69a9c617711e57).
+
 
 ![image](https://github.com/ajuna-network/SubstrateNET.BasicUnityDemo/blob/main/images/BlockNumberScreenshot.png?raw=true)
 
@@ -26,12 +28,13 @@ There are two different examples:
 - Open Node Connection scene
 - Play project
 - You can see the
+- [Video Explantion of the implementation can be found here](https://www.loom.com/share/630e4f49c21c4f438576b492298d90b8).
+
 
 ![image](https://github.com/ajuna-network/SubstrateNET.BasicUnityDemo/blob/main/images/DoSomethingScreenshot.png?raw=true)
 
 
-## Available Video Tutorials
+## Other Available Video Tutorials
 
 - [How to generate the necessary .NET projects using the Ajuna.SDK](https://www.youtube.com/watch?v=27k8vxCrXcY)
 - [How to generate the necessary DLLs for your Unity project](https://www.youtube.com/watch?v=c_FpDCys3YI)
-- [Walkthrough of `substrate-node-template` implementation](https://www.loom.com/share/630e4f49c21c4)
