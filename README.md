@@ -10,10 +10,22 @@ There are two different examples:
 - Unity version 2021.3.7f1
 
 ## 1. Run on main 
-- Run Substrate Node: [monthly-2022-11](https://github.com/paritytech/substrate/releases/tag/monthly-2022-11) in `--dev` mode
+- Checkout Substrate Node: [monthly-2022-11](https://github.com/paritytech/substrate/releases/tag/monthly-2022-11) 
+- Run in dev mode:  ./target/release/substrate --dev
 - Open project
 - Open Node Connection scene
 - Play project
 
-![image](https://user-images.githubusercontent.com/17710198/179059678-e8578c14-50bf-4ad7-95c1-252f7ac2503d.png)
+![image](https://github.com/ajuna-network/SubstrateNET.BasicUnityDemo/blob/main/images/BlockNumberScreenshot.png?raw=true)
+
+
+
+## 1. Run on main
+- Checkout Substrate Node: [monthly-2022-11](https://github.com/paritytech/substrate/releases/tag/monthly-2022-11)
+- Run in dev node template mode: `./target/release/node-template --dev`
+- Open project
+- Open Node Connection scene
+- Play project
+
+![image](https://github.com/ajuna-network/SubstrateNET.BasicUnityDemo/blob/main/images/DoSomethingScreenshot.png?raw=true)
 
